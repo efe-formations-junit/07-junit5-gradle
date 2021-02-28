@@ -1,0 +1,21 @@
+plugins {
+    id 'java-library'
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+	testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.6.2'
+	
+			// Pour les suites de tests
+	testCompile group: 'org.junit.platform', name: 'junit-platform-runner', version: '1.6.2'
+	
+			// Pour les tests parametrés
+	testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: '5.6.2'
+			
+			// Compatibilité avec JUnit 3 et  JUnit 4
+	testCompile group: 'org.junit.vintage', name: 'junit-vintage-engine', version: '5.6.2'
+	
+}
